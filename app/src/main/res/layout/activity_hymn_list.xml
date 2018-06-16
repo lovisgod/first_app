@@ -20,16 +20,26 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:background="@drawable/corners"
-        android:click="onClick"
         android:clickable="true"
         android:queryHint="Search Hymn">
 
     </SearchView>
 </RelativeLayout>
 
+    <ImageButton
+        android:id="@+id/gold_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/gold_arrow" />
+
     <ScrollView
-        android:layout_width="309dp"
-        android:layout_height="wrap_content">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
         <TextView
             android:id="@+id/list_hymn"
@@ -39,13 +49,5 @@
             android:textSize="20sp" />
 
     </ScrollView>
-
-    <ImageButton
-        android:id="@+id/gold_arrow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="10dp"
-        android:src="@drawable/gold_arrow" />
 
 </FrameLayout>
