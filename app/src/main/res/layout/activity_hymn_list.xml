@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whiteback">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginLeft="300dp"
+        android:src="@drawable/logo_1" />
+
+    <SearchView
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corners"
+        android:click="onClick"
+        android:clickable="true"
+        android:queryHint="Search Hymn">
+
+    </SearchView>
+</RelativeLayout>
+
+    <ScrollView
+        android:layout_width="309dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/list_hymn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/gold_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/gold_arrow" />
+
+</FrameLayout>
