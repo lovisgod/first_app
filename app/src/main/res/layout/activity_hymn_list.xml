@@ -34,20 +34,14 @@
         android:layout_marginLeft="10dp"
         android:src="@drawable/gold_arrow" />
 
-    <ScrollView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Hymn_recycler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp">
+    </android.support.v7.widget.RecyclerView>
 
-        <TextView
-            android:id="@+id/list_hymn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:textSize="20sp" />
-
-    </ScrollView>
 
 </FrameLayout>
