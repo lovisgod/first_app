@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HymnListActivity"></activity>
+        <activity android:name=".HymnEnglishActivity"></activity>
     </application>
 
 </manifest>
