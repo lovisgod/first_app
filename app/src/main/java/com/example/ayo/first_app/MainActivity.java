@@ -14,12 +14,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mEnglish = (Button) findViewById(R.id.english);
+        mEnglish = findViewById(R.id.english);
         mEnglish.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent startHymnActivity = new Intent(MainActivity.this, HymnListActivity.class);
+                Intent startHymnActivity = new Intent(MainActivity.this,HymnEnglishActivity.class);
                 startActivity(startHymnActivity);
             }
         });

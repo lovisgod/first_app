@@ -9,17 +9,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HymnAdapter extends RecyclerView.Adapter<HymnAdapter.ViewHolder> {
 
 
 
+    // Changed list type to String[] instead of List
+    private String[] listItems;
 
-    private List<String> listItems;
-
-    //this constructor is created to get the items in ListItems
-    public HymnAdapter(List<String> listItems) {
+    //this constructor is created to get the items in listItems
+    public HymnAdapter(String[] listItems) {
         this.listItems = listItems;
     }
 
@@ -33,25 +34,24 @@ public class HymnAdapter extends RecyclerView.Adapter<HymnAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder( ViewHolder holder, int position) {
-       String hymnData = listItems.get(position);
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+       String hymnData = listItems[position];
        holder.hymnText.setText(hymnData);
     }
 
     @Override
     public int getItemCount() {
-        return listItems.size();
+        return listItems.length;
     }
 
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
-        public TextView hymnText;
+    class ViewHolder extends RecyclerView.ViewHolder{
+        private TextView hymnText;
 
-        public ViewHolder(View itemView) {
+        private ViewHolder(View itemView) {
             super(itemView);
 
-            hymnText = (TextView) itemView.findViewById(R.id.hymn_list);
+            hymnText = itemView.findViewById(R.id.hymn_list);
         }
     }
-
 }
