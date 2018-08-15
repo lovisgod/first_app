@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="none">
+       <!-- <item
+            android:id="@+id/nav_choosetheme"
+            android:title="@string/choose_theme" >
+
+            <menu
+                app:showAsAction="never">
+                <item
+                    android:id="@+id/action_darktheme"
+                    android:icon="@drawable/logoicon"
+                    android:title="@string/darktheme" />
+                <item
+                    android:id="@+id/action_lighttheme"
+                    android:icon="@drawable/logoicon"
+                    android:title="@string/lighttheme" />
+
+            </menu>
+
+        </item>-->
+        <item
+            android:id="@+id/nav_aboutmfm"
+            android:icon="@drawable/welcome"
+            android:title="@string/About_mfm" />
+        <item
+            android:id="@+id/nav_aboutdeveloper"
+            android:icon="@drawable/about"
+            android:title="@string/developer" />
+    </group>
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_feed"
+                android:icon="@drawable/feedcolor"
+                android:title="@string/feed" />
+        </menu>
+    </item>
+</menu>

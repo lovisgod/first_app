@@ -16,4 +16,21 @@
         <item>Hymn 13</item>
         <item>Hymn 14</item>
     </string-array>
+    <string name="search_hint">search hymn</string>
+    <string name="choose_theme">Choose Theme</string>
+    <string name="About_mfm">About MFM</string>
+    <string name="developer">About Us</string>
+    <string name="communicate">Help Improve The App</string>
+    <string name="feed">Feedback</string>
+    <string name="navigation_drawer_open">open drawer</string>
+    <string name="navigation_drawer_close">close drawer</string>
+    <string name="darktheme">Dark Theme</string>
+    <string name="lighttheme">Light Theme</string>
+    <string name="title_activity_yoruba">yorubaActivity</string>
+    <string name="mfmdetails">MFM Ministries is a full gospel ministry devoted to the Revival of Apostolic Signs, Holy Ghost fireworks and the unlimited demonstration of the power of God to deliver to the uttermost. Absolute holiness within and without as the greatest spiritual insecticide and a pre-requisite for Heaven is taught openly. MFM is a do-it-yourself Gospel ministry where your hands are trained to wage war and your fingers to do battle. At MFM, aggressive prayer is considered as an aid to spiritual focus and a check against being overwhelmed by the flesh. At MFM Prayer City, prayer goes on 24 hours a day, 7 days a week, non-stop.</string>
+    <string name="nameone">AYOOLUWA</string>
+    <string name="aboutone">Hi, my name is AYOOLUWA OLOSUNDE , I am a graduate of ADEKUNLE AJASIN UNIVERSITY. I took up software development as a career after majoring in Applied Geophysics. I have the hope of becoming a GIS DEVELOPER one day.</string>
+    <string name="nametwo">AYOOLUWA</string>
+    <string name="abouttwo">Hi, my name is AYOOLUWA OLOSUNDE , I am a graduate of ADEKUNLE AJASIN UNIVERSITY. I took up software development as a career after majoring in Applied Geophysics. I have the hope of becoming a GIS DEVELOPER one day.</string>
+    <string name="feedbackmain">please give a feedback to let us know how we can improve the app for the glory of God</string>
 </resources>

@@ -2,17 +2,17 @@ package com.example.ayo.first_app;
 
 import android.app.SearchManager;
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.widget.FrameLayout;
-import android.widget.Toast;
+import android.view.View;
 
-import org.intellij.lang.annotations.Language;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -21,23 +21,20 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
-public class HymnEnglishActivity extends AppCompatActivity {
+public class yorubaActivity extends AppCompatActivity {
 
     private List<list_item> list_items;
     private HymnAdapter adapter;
     private android.support.v7.widget.SearchView searchView;
-    private FrameLayout frameLayout;
-
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hymn_english);
+        setContentView(R.layout.content_yoruba);
 
-        RecyclerView mRecyclerView = findViewById(R.id.Hymn_recycler_view);
+        RecyclerView mRecyclerView = findViewById(R.id.yoruba_recycler_view);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -56,23 +53,23 @@ public class HymnEnglishActivity extends AppCompatActivity {
                 JSONObject userDetail = userArray.getJSONObject(i);
                 // fetch hymn and full details and store it in arraylist
 
-            list_item listItem = new list_item(
-                    userDetail.getString("hymn"),
-                    userDetail.getString("full")
-            );
+                list_item listItem = new list_item(
+                        userDetail.getString("hymn"),
+                        userDetail.getString("full")
+                );
 
 
 
                 list_items.add(i,listItem);
-            //adapter.notifyDataSetChanged();
+                //adapter.notifyDataSetChanged();
             }
             adapter = new HymnAdapter(this, list_items);
 
 
             mRecyclerView.setAdapter(adapter);
         }catch (JSONException e) {
-                e.printStackTrace();
-            }
+            e.printStackTrace();
+        }
 
 
     }
@@ -115,7 +112,7 @@ public class HymnEnglishActivity extends AppCompatActivity {
     public String loadJSONFromAsset() {
         String json = null;
         try {
-            InputStream is = getAssets().open("sample.json");
+            InputStream is = getAssets().open("yoruba.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -128,9 +125,6 @@ public class HymnEnglishActivity extends AppCompatActivity {
         return json;
     }
 
-
-
-}
-
+    }
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/frame"
+    android:id="@+id/frameyoruba"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/whiteback">
@@ -9,7 +9,7 @@
 
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/Hymn_recycler_view"
+        android:id="@+id/yoruba_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"/>
