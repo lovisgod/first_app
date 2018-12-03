@@ -17,7 +17,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="120dp"
-        app:srcCompat="@drawable/logonew" />
+        app:srcCompat="@drawable/mfm" />
 
     <TextView
         android:id="@+id/textView"
@@ -29,7 +29,8 @@
         android:text="MOUNTAIN OF FIRE AND MIRACLE"
         android:textColor="#ffff"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -41,6 +42,7 @@
         android:text="MINISTRY"
         android:textColor="#ffff"
         android:textSize="20sp"
+        android:fontFamily="serif-monospace"
         android:textStyle="bold" />
 
 

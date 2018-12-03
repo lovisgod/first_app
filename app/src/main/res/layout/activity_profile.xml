@@ -21,7 +21,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:padding="5dp"
-        android:src="@drawable/profile" />
+        android:src="@drawable/mfm" />
 
 
     <TextView
@@ -59,7 +59,7 @@
             android:layout_below="@id/aDescription"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
-            app:srcCompat="@drawable/profile"/>
+            app:srcCompat="@drawable/mfm"/>
 
 
         <TextView

@@ -22,18 +22,18 @@
         </item>-->
         <item
             android:id="@+id/nav_aboutmfm"
-            android:icon="@drawable/welcome"
+            android:icon="@drawable/mfm"
             android:title="@string/About_mfm" />
         <item
             android:id="@+id/nav_aboutdeveloper"
-            android:icon="@drawable/about"
+            android:icon="@drawable/profile"
             android:title="@string/developer" />
     </group>
     <item android:title="@string/communicate">
         <menu>
             <item
                 android:id="@+id/nav_feed"
-                android:icon="@drawable/feedcolor"
+                android:icon="@drawable/feedback"
                 android:title="@string/feed" />
         </menu>
     </item>
