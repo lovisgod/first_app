@@ -19,7 +19,7 @@
             android:layout_height="120dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="40dp"
             android:padding="5dp"
             android:src="@drawable/mfm" />
 
@@ -30,9 +30,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/churchprofile"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="40dp"
             android:gravity="center"
-            android:text="MOUNTAIN OF FIRE AND MIRACLE MINISTRY"
+            android:text="MOUNTAIN OF FIRE AND MIRACLE MINISTRIES"
             android:textColor="@color/myPurple"
             android:textSize="20sp"
             android:textStyle="bold"/>
@@ -45,13 +45,13 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="15dp"
             android:layout_marginTop="16dp"
-            android:gravity="center_horizontal"
-            android:fontFamily="serif-monospace"
+            android:gravity="center"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/mfmdetails"
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="45sp"
+            android:fontFamily="serif-monospace"
             android:textStyle="italic"/>
 
 

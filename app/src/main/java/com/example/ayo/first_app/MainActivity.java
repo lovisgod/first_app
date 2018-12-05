@@ -65,8 +65,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mYoruba.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startyorubaActivity = new Intent(MainActivity.this, yorubaActivity.class);
-                startActivity(startyorubaActivity);
+
+                Toast.makeText(getApplicationContext(), "COMING SOON", Toast.LENGTH_LONG).show();
+//                Intent startyorubaActivity = new Intent(MainActivity.this, yorubaActivity.class);
+//                startActivity(startyorubaActivity);
             }
         });
     }
